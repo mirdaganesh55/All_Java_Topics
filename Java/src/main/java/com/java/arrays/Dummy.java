@@ -4,6 +4,22 @@ import java.util.Scanner;
 
 public class Dummy {
 	
+	static void checkDuplicate(int arr[]) {
+		int n = arr.length;
+		for(int i =0;i<n;i++) {
+			for(int j = i+1;j<n;j++) {
+				if(arr[i] == arr[j]) {
+					arr[i] = 10;
+				}
+			}
+		}
+		for(int o:arr) {
+			if(o!= 10) {
+				System.out.println(o);
+			}
+		}
+	}
+	
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter num of ele to insert ");
@@ -13,26 +29,7 @@ public class Dummy {
         for(int i=0;i<n;i++) {
         	a[i]=sc.nextInt();
         }
-        System.out.println("Elements in annary are : ");
-        for (int i : a) {
-			System.out.println(i);
-		}
-        
-        boolean counted[] = new boolean[n];
-        int count=0;
-        for(int i = 0; i < n; i++) {
-        	count=1;
-        	if(counted[i]) {
-        		continue;
-        	}
-            for(int j = i + 1; j < n; j++) {
-                if(a[i] == a[j]) {
-                	count++;
-                	counted[j]=true;
-                 }
-            }
-            System.out.println(a[i]+" occur "+count+" times");
-        }
+        checkDuplicate(a);
     }
 
 }
