@@ -1,4 +1,4 @@
-package com.org.java5;
+package com.org.star;
 
 import java.util.Scanner;
 
