@@ -8,7 +8,7 @@ public class SmallestElement {
 		int n = arr.length;
 		int sum = arr[0];
 		for(int i = 0;i<n;i++) {
-			if(arr[i]>sum) {
+			if(arr[i]<sum) {
 				sum = arr[i];
 			}
 		}

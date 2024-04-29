@@ -1,6 +1,5 @@
 package com.java.SearchAndSort;
 
-import java.awt.Checkbox;
 import java.util.Scanner;
 
 public class LinearSearch {
