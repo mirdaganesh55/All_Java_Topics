@@ -12,9 +12,9 @@ public class ClassA {
 			}
 		}
 	}
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-
 		int a[]={33,4,5,1};//declaring and initializing an array  
 		minArray(a);
 	}
