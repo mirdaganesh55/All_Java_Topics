@@ -3,7 +3,6 @@ package com.java.arrays;
 import java.util.Scanner;
 
 public class Dummy {
-	
 	static void checkDuplicate(int arr[]) {
 		int n = arr.length;
 		for(int i =0;i<n;i++) {
@@ -19,7 +18,6 @@ public class Dummy {
 			}
 		}
 	}
-	
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter num of ele to insert ");
@@ -31,5 +29,4 @@ public class Dummy {
         }
         checkDuplicate(a);
     }
-
 }
